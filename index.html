@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulaire de contact</title>
+</head>
+<body>
+  <h2>Formulaire de contact</h2>
+  <form action="https://n8n.oriatec.fr/webhook-test/031907c4-d988-4e98-a679-57716577e514" method="post">
+    <label for="name">Nom :</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="firstname">Prénom :</label><br>
+    <input type="text" id="firstname" name="firstname" required><br><br>
+
+    <label for="email">Email :</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="phone">Numéro :</label><br>
+    <input type="tel" id="phone" name="phone" required><br><br>
+
+    <label for="service">Choisissez un service :</label><br>
+    <select id="service" name="service" required>
+      <option value="">-- Sélectionnez un service --</option>
+      <option value="commercial">Commercial</option>
+      <option value="technique">Technique</option>
+      <option value="autres">Autres</option>
+    </select><br><br>
+
+    <label for="message">Message :</label><br>
+    <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
+
+    <input type="submit" value="Envoyer">
+  </form>
+</body>
+</html>
