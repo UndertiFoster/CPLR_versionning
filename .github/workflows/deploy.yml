@@ -13,7 +13,7 @@ step :
     uses : peaceiris/actions-git-pages@v3
     with : 
       publish-dir : ./
-      github_token : {{secrets.GITHUB_TOKEN}}
+      github_token : ${{secrets.GITHUB_TOKEN}}
 permissions:
   contents : write
                                     
