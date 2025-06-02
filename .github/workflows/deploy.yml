@@ -1,0 +1,21 @@
+name : Deploiement formulaire
+on : 
+   push : 
+    branches : 
+      - master 
+jobs : 
+  deploy : 
+    runs-on : ubuntu-latest
+step : 
+  - name : Recup code 
+    uses : actions/checkout@v4
+  - name : Passe 2
+    uses : peaceiris/actions-git-pages@v3
+    with : 
+      publish-dir : ./
+      github_token : {{secrets.GITHUB_TOKEN}}
+permissions:
+  content : write
+                                    
+                                  
+                      
