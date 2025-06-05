@@ -3,34 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <title>Formulaire de contact</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/51aa81c340.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <h2>Formulaire de contact</h2>
-  <form action="https://n8n.oriatec.fr/webhook-test/031907c4-d988-4e98-a679-57716577e514" method="post">
-    <label for="name">Nom :</label><br>
-    <input type="text" id="name" name="name" required><br><br>
+  <section>
+    <h1>Formulaire de contact</h1>
+    <form action="https://n8n.oriatec.fr/webhook-test/031907c4-d988-4e98-a679-57716577e514" method="post">
 
-    <label for="firstname">Prénom :</label><br>
-    <input type="text" id="firstname" name="firstname" required><br><br>
+      <div class="input-box">
+        <input type="text" id="name" name="name" placeholder="Nom" required>
+        <i class="fa-solid fa-circle-user" style="position:absolute; right:15px; top:50%; transform:translateY(-50%); color:#fff;"></i>
+      </div>
 
-    <label for="email">Email :</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+      <div class="input-box">
+        <input type="text" id="firstname" name="firstname" placeholder="Prénom" required>
+        <i class="fa-solid fa-circle-user" style="position:absolute; right:15px; top:50%; transform:translateY(-50%); color:#fff;"></i>
+      </div>
 
-    <label for="phone">Numéro :</label><br>
-    <input type="tel" id="phone" name="phone" required><br><br>
+      <div class="input-box">
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <i class="fa-solid fa-envelope" style="position:absolute; right:15px; top:50%; transform:translateY(-50%); color:#fff;"></i>
+      </div>
 
-    <label for="service">Choisissez un service :</label><br>
-    <select id="service" name="service" required>
-      <option value="">-- Sélectionnez un service --</option>
-      <option value="commercial">Commercial</option>
-      <option value="technique">Technique</option>
-      <option value="autres">Autres</option>
-    </select><br><br>
+      <div class="input-box">
+        <input type="tel" id="phone" name="phone" placeholder="Numéro" required>
+        <i class="fa-solid fa-phone" style="position:absolute; right:15px; top:50%; transform:translateY(-50%); color:#fff;"></i>
+      </div>
 
-    <label for="message">Message :</label><br>
-    <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
+      <div class="input-box">
+        <select id="service" name="service" required style="width: 100%; padding: 15px; border-radius: 25px; background-color: transparent; border: 2px solid rgba(255,255,255,0.2); color: #fff;">
+          <option value="">-- Sélectionnez un service --</option>
+          <option value="commercial">Commercial</option>
+          <option value="technique">Technique</option>
+          <option value="autres">Autres</option>
+        </select>
+      </div>
 
-    <input type="submit" value="Envoyer">
-  </form>
+      <div class="input-box">
+        <textarea id="message" name="message" rows="5" placeholder="Votre message..." required style="width: 100%; padding: 15px; border-radius: 25px; background-color: transparent; border: 2px solid rgba(255,255,255,0.2); color: #fff; resize: vertical;"></textarea>
+      </div>
+
+      <div class="input-box">
+        <input type="submit" value="Envoyer" style="background-color: #fff; color: green; font-weight: bold; cursor: pointer;">
+      </div>
+
+    </form>
+  </section>
 </body>
 </html>

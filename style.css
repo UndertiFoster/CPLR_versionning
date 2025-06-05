@@ -1,0 +1,62 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+}
+
+body {
+    background-color: red;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(img.png);
+}
+
+section {
+    padding:  30px;
+    width: 420px;
+    border-radius: 20px;
+}
+
+section h1 {
+
+    font-size: 30px;
+    text-align: center;
+    color : #fff;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    width: 100%;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color : #fff;
+    padding-right:  40px;
+
+}
+
+.input-box input::placeholder{
+    color: #fff;
+}
+
+.input-box i {
+    position:  absolute;
+    transform: translateY(-50%);
+    right : 20PX;
+    top : 50%;
+    color : #fff;
+
+}
+
+
